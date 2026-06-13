@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Labib Impact</title>
+<style>
+  :root{
+    --bg-darker:#060e0c;
+    --teal-glow:#7fe0e0;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  body{
+    font-family:'Poppins', sans-serif;
+    background:var(--bg-darker);
+    min-height:100vh;
+  }
+
+  /* ---------- MAIN HERO ---------- */
+  .hero{
+    position:relative;
+    width:100%;
+    max-width:480px;
+    margin:0 auto;
+    aspect-ratio: 301 / 567;
+    overflow:hidden;
+  }
+
+  .hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .trigger{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    border-radius:10px;
+    cursor:pointer;
+    transition:box-shadow 0.25s ease, background 0.25s ease;
+  }
+
+  .trigger:hover,
+  .trigger:active{
+    background:rgba(255,255,255,0.12);
+    box-shadow:0 0 18px 3px rgba(127,224,224,0.4);
+  }
+
+  /* over the "CLICK" box */
+  .trigger-1{
+    left:50.5%;
+    top:44.8%;
+    width:44%;
+    height:9.5%;
+  }
+
+  /* over the "click" box */
+  .trigger-2{
+    left:71%;
+    top:81.8%;
+    width:46%;
+    height:12%;
+  }
+
+  /* ---------- NOYON SECTION ---------- */
+  .noyon-section{
+    position:relative;
+    width:100%;
+    max-width:480px;
+    margin:0 auto;
+    overflow:hidden;
+  }
+
+  .noyon-section img{
+    width:100%;
+    display:block;
+  }
+
+  .noyon-label{
+    position:absolute;
+    top:6%;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:1.3rem;
+    font-weight:600;
+    color:#fff;
+    text-shadow:0 2px 10px rgba(0,0,0,0.85);
+    letter-spacing:0.04em;
+    white-space:nowrap;
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <img src="hero-mobile.jpg" alt="Labib Impact main banner">
+    <a class="trigger trigger-1" href="https://www.youtube.com/watch?v=9jWv4MXpZ0U" target="_blank" rel="noopener" aria-label="sahil gu khay to see click this"></a>
+    <a class="trigger trigger-2" href="https://youtu.be/dQw4w9WgXcQ?si=6e-SPm0NF9U6kdEH" target="_blank" rel="noopener" aria-label="safayet gay to watch him"></a>
+  </section>
+
+  <section class="noyon-section">
+    <img src="noyon.jpg" alt="this is noyon">
+    <span class="noyon-label">this is noyon</span>
+  </section>
+
+</body>
+</html>
